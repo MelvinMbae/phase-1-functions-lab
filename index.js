@@ -6,16 +6,16 @@ function distanceFromHqInBlocks(distance) {
 
     else { return distance - 26 }
 }
-console.log(distanceFromHqInBlocks(43))
-console.log(distanceFromHqInBlocks(50))
-console.log(distanceFromHqInBlocks(34))
+distanceFromHqInBlocks(43)
+distanceFromHqInBlocks(50)
+distanceFromHqInBlocks(34)
 
 function distanceFromHqInFeet(distance) {
     return distanceFromHqInBlocks(distance) * 264
 }
-console.log(distanceFromHqInFeet(43))
-console.log(distanceFromHqInFeet(50))
-console.log(distanceFromHqInFeet(34))
+distanceFromHqInFeet(43)
+distanceFromHqInFeet(50)
+distanceFromHqInFeet(34)
 
 function distanceTravelledInFeet(start, destination) {
     if (destination >= start) {
@@ -26,9 +26,9 @@ function distanceTravelledInFeet(start, destination) {
     else { return (start - destination) * 264 }
 
 }
-console.log(distanceTravelledInFeet(43, 48))
-console.log(distanceTravelledInFeet(50, 60))
-console.log(distanceTravelledInFeet(34, 28))
+distanceTravelledInFeet(43, 48)
+distanceTravelledInFeet(50, 60)
+distanceTravelledInFeet(34, 28)
 
 function calculatesFarePrice(start, destination) {
     const travelDistance = distanceTravelledInFeet(start, destination)
@@ -46,7 +46,7 @@ function calculatesFarePrice(start, destination) {
     }
 
 }
-console.log(calculatesFarePrice(43, 44))
-console.log(calculatesFarePrice(34, 32))
-console.log(calculatesFarePrice(50, 58))
-console.log(calculatesFarePrice(34, 24))
+calculatesFarePrice(43, 44)
+calculatesFarePrice(34, 32)
+calculatesFarePrice(50, 58)
+calculatesFarePrice(34, 24)
